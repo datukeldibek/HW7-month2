@@ -21,7 +21,7 @@ class Bank {
         print("сумма перевода:", terminator: " ")
         var sum: Int?
         sum = Int(readLine()!)
-        sum == nil ? print("nil") : print("not nil")
+        sum == nil ? print("l") : print("")
         
         for client in clients {
             for card in client.cards {
@@ -38,6 +38,6 @@ class Bank {
                     card.bill += Double(sum!)
                 }
             }
+            }
         }
     }
-}
